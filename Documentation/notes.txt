@@ -1,0 +1,4 @@
+
+addCount() - Tjek om brugerens liste af accounts er større end før
+
+remove() - tjek om brugeres list er mindre end før
