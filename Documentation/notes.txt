@@ -1,4 +1,16 @@
 
-addCount() - Tjek om brugerens liste af accounts er større end før
+addCount() - pre: Tjek om brugerens liste af accounts er større end før
 
-remove() - tjek om brugeres list er mindre end før
+remove() - pre: tjek om brugeres list er mindre end før, og kontroller samme id ikke længee er i listen
+
+setName() - pre: preconditions ?? tjek om de er overholdt
+
+setStatus() - pre: tjek om status er valid
+
+setOwner() - pre: Customer eksisterer, post: new owner bliver sat
+
+withdraw() - pre: mængden er postivi og overstiger ikke kundens balance + creditlimit post: mængden bliver hævet
+
+deposit() - pre: mængden er positiv
+
+setCreditlmit() - pre: mængden er ?
