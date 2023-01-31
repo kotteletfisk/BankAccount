@@ -13,4 +13,4 @@ withdraw() - pre: mængden er postivi og overstiger ikke kundens balance + credi
 
 deposit() - pre: mængden er positiv
 
-setCreditlmit() - pre: mængden er ?
+setCreditlmit() - pre: mængden er negativ
