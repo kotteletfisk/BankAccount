@@ -1,4 +1,4 @@
-public class NoSuchFuckeryException extends Exception
+public class NoSuchFuckeryException extends RuntimeException
 {
     public NoSuchFuckeryException(String message)
     {
