@@ -2,6 +2,11 @@ public class SalaryAccount extends BankAccount
 {
     double creditlimit = 0;
 
+    public SalaryAccount()
+    {
+        super();
+    }
+
     @Override
     public void setOwner(Customer owner)
     {

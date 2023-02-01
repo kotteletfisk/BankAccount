@@ -4,8 +4,14 @@ public abstract class BankAccount
 
     protected Customer owner;
 
+    private static int id_buffer = 1;
     private int id;
 
+    public BankAccount()
+    {
+        this.id = id_buffer;
+        id_buffer++;
+    }
 
     public abstract void setOwner(Customer owner);
 
