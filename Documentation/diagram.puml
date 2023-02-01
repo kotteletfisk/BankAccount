@@ -1,10 +1,12 @@
 @startuml
 'https://plantuml.com/class-diagram
+class Bank{
+    + boolean transferMoney(BankAccount from, BankAccountID to, double amount)
+}
 
 abstract class BankAccount{
     # double balance
     # Customer owner
-
     + abstract void setOwner(Customer owner)
     + abstract boolean withdraw(double amount)
     + int getId()
@@ -26,7 +28,7 @@ class Customer{
     - int id
     - ArrayList<BankAccount> accounts
    + void addAccount(BankAccount account)
-   + void remove(BankAccount account)
+   + void removeAccount(BankAccount account)
    + void setName(String name)
    + void setStatus(Status status)
    + String getName()
@@ -46,7 +48,5 @@ BankAccount <|-- PremiumAccount
 
 Customer "1"*--* "many"BankAccount
 Customer  *-- "1" Status
-
-
 
 @enduml
