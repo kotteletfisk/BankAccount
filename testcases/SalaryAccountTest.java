@@ -30,4 +30,16 @@ class SalaryAccountTest {
         assertTrue(salaryAccount.withdraw(4000));
     }
 
+    @Test
+    void getid() {
+
+        BankAccount sal1 = new SalaryAccount();
+        BankAccount sal2 = new SalaryAccount();
+        BankAccount sal3 = new SalaryAccount();
+
+        assertEquals(2, sal1.getId());
+        assertEquals(3, sal2.getId());
+        assertEquals(4, sal3.getId());
+    }
+
 }

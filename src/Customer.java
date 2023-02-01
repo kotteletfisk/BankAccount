@@ -8,12 +8,11 @@ public class Customer
 
     private int id;
 
-    ArrayList<BankAccount> accounts;
+    ArrayList<BankAccount> accounts = new ArrayList<>();
 
     public void addAccount(BankAccount account) {
 
         accounts.add(account);
-
     }
 
     public void remove(BankAccount account) {
