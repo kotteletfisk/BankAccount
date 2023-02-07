@@ -12,6 +12,7 @@ public class Customer
 
     public void addAccount(BankAccount account) {
 
+        account.setOwner(this);
         accounts.add(account);
     }
 
